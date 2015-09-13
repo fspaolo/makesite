@@ -1,0 +1,7 @@
+- find a better way to pass the navigation structure
+
+- given the paths to 'style' and 'template' detect the relative path to each
+  text file automaticaly
+
+- write documentation
+
