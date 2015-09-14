@@ -1,31 +1,77 @@
 # Makesite.py
-**Extremely simple static site generator**
 
-`Makesite.py` is a static site (single script) generator written in Python.
+`Makesite.py` is an extremely simple static site generator written in Python.
 You write your content in text files and `Makesite.py` does the rest for you.
-It works by taking as input a template (HTML), a style (CSS), and a bunch of
-text files (Markdown) to generate static HTML pages.
+It works by taking as input an HTML template, a CSS style, and a bunch of
+text files (in Markdown) and generating static HTML pages.
 
-Download the following files to the same folder:
+## How it works
 
-    template.html -- the skeleton of the webpage
-    style.css     -- the style of the webpage
-    index.md      -- the content of the webpage
+Place the following files into a folder:
+
+    makesite.py   -- the script to generate each webpage
+    template.html -- the skeleton of each webpage
+    style.css     -- the style of each webpage
+    index.md      -- the content of each webpage
 
 and run:
 
     python makesite.py
 
+This will generate an `index.html`.
 
-**Important**: This is not a blog! `Makesite.py` was developed with the
-following principles in mind:
+## What this is
+
+`Makesite.py` is not a blog! If a blog is what you are looking for, there are
+a few dozens of blog generators our there. `Makesite.py` was developed
+with the following concepts in mind:
 
 * Extremely simple (very easy to understand and modify)
 * No installation required (run everywhere)
-* All functions in one single script (that I can actually understand)
+* No setup required (provide a text file, get an HTML page)
 * No templating languages (just pure HTML, CSS and Python!)
-* Minimal setting (one text file => one HTML page) 
+* All functions in one single script (that I can actually understand)
 * Navigation bar generated for you (customizable if you prefer)
 
-If all you want is to put simple HTML content on the web (such as a personal
-webpage), then this might be the tool you are looking for.
+If all you want is to simply put HTML content on the web (such as a personal
+webpage), then this might be the right tool for you.
+
+## Example
+
+To get you started we provide a full basic website structure (with a Makefile
+included):
+
+    makesite/
+       |__ Makefile
+       |__ makesite.py 
+       |__ template.html 
+       |__ style.html 
+       |__ index.md 
+       |__ first/ 
+              |__ index.md 
+       |__ second/ 
+              |__ index.md 
+       |__ third/ 
+              |__ index.md 
+
+To get the HTML pages: 
+
+    cd mysite
+    python makesite.py
+
+or using the Makefile:
+
+    cd mysite
+    make
+    make show
+
+Now all you have to do is replace the content of the Markdown files (.md)
+with your own. For each Markdown file an HTML page will be created and added
+to the navigation bar. In this example each webpage (Markdown file) is placed
+into a sub-folder to keep things organized, but you can have all pages in the
+same folder if you prefer.
+
+If you want to customize your website you can play around with the `style.css`
+and/or `template.html'.
+
+--Happy coding!
