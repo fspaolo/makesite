@@ -1,8 +1,10 @@
 # Makesite.py
 **Extremely simple static site generator**
 
-`makesite.py` is a single python script to generate a static websites. You
-write your content in text files and `makesite.py` does the rest for you.
+`Makesite.py` is a static site (single script) generator written in Python.
+You write your content in text files and `Makesite.py` does the rest for you.
+It works by taking as input a template (HTML), a style (CSS), and a bunch of
+text files (Markdown) to generate static HTML pages.
 
 Download the following files to the same folder:
 
@@ -15,10 +17,8 @@ and run:
     python makesite.py
 
 
-It works by taking as input a template (HTML), a style (CSS), and a bunch of
-text files (Markdown) to generate static HTML pages.
-
-**Warning**: This is not a blog! The purpose of `makesite.py` is:
+**Important**: This is not a blog! `Makesite.py` was developed with the
+following principles in mind:
 
 * Extremely simple (very easy to understand and modify)
 * No installation required (run everywhere)
@@ -27,5 +27,5 @@ text files (Markdown) to generate static HTML pages.
 * Minimal setting (one text file => one HTML page) 
 * Navigation bar generated for you (customizable if you prefer)
 
-If all you want is to put simple HTML content on the web, then this is the
-this tool might be for you.
+If all you want is to put simple HTML content on the web (such as a personal
+webpage), then this might be the tool you are looking for.
