@@ -56,22 +56,31 @@ included):
 
 To get the HTML pages: 
 
-    cd mysite
+    cd makesite
     python makesite.py
 
 or using the Makefile:
 
-    cd mysite
+    cd makesite
     make
-    make show
 
 Now all you have to do is replace the content of the Markdown files (.md)
 with your own. For each Markdown file an HTML page will be created and added
-to the navigation bar. In this example each webpage (Markdown file) is placed
-into a sub-folder to keep things organized, but you can have all pages in the
-same folder if you prefer.
+to the navigation bar. Then you just upload all this content to any webserver.
 
-If you want to customize your website you can play around with the `style.css`
-and/or `template.html'.
+In this example each webpage (Markdown file) is placed into a sub-folder to
+keep things organized (with the exception of the website's landing page, the
+'Home' page), but you can have all pages in the same folder if you prefer.
+
+To customize your website you can play around with the `style.css` and/or
+`template.html'.
+
+A `Makefile` is also provided for convenience. For example, to generate the
+website and upload it to [GitHub](https://pages.github.com/) you can do:
+
+    cd makesite
+    make
+    make show
+    make git
 
 --Happy coding!
