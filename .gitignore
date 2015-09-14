@@ -1,4 +1,5 @@
 log
 old
+index.html
 *.bak
 .hyde_deps
