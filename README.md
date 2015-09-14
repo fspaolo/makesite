@@ -12,7 +12,7 @@ Place the following files into a folder:
     makesite.py   -- the script to generate each webpage
     template.html -- the skeleton of each webpage
     style.css     -- the style of each webpage
-    index.md      -- the content of each webpage
+    index.md      -- the content of a webpage
 
 and run:
 
@@ -22,8 +22,8 @@ This will generate an `index.html`.
 
 ## What this is
 
-`Makesite.py` is not a blog! If a blog is what you are looking for, there are
-a few dozens of blog generators our there. `Makesite.py` was developed
+`Makesite.py` is not a blog generator! If a blog is what you are looking for, there are
+a few dozens of blog softwares out there. `Makesite.py` was developed
 with the following concepts in mind:
 
 * Extremely simple (very easy to understand and modify)
@@ -38,7 +38,7 @@ webpage), then this might be the right tool for you.
 
 ## Example
 
-To get you started we provide a full basic website structure (with a Makefile
+To get you started we provide a full basic website structure (with a `Makefile`
 included):
 
     makesite/
@@ -59,12 +59,12 @@ To get the HTML pages:
     cd makesite
     python makesite.py
 
-or using the Makefile:
+or using the `Makefile`:
 
     cd makesite
     make
 
-Now all you have to do is replace the content of the Markdown files (.md)
+Now all you have to do is replace the content of the Markdown files (`.md`)
 with your own. For each Markdown file an HTML page will be created and added
 to the navigation bar. Then you just upload all this content to any webserver.
 
@@ -73,7 +73,7 @@ keep things organized (with the exception of the website's landing page, the
 'Home' page), but you can have all pages in the same folder if you prefer.
 
 To customize your website you can play around with the `style.css` and/or
-`template.html'.
+`template.html`.
 
 A `Makefile` is also provided for convenience. For example, to generate the
 website and upload it to [GitHub](https://pages.github.com/) you can do:
