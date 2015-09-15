@@ -36,15 +36,9 @@ img_file_ext = ('.jpg', '.png')
 navbar = None 
 
 # to define your own navigation bar uncomment the lines below
-'''
 navbar = OrderedDict([
-('Home', './index.md'),
-('First', './first/index.md'),
-('Second', './second/index.md'),
-('Third', './third/index.md'),
-('External', 'http://#'),
+('Download', 'https://github.com/fspaolo/makesite/'),
 ])
-'''
 
 
 def get_files(directory, ext=('.md'), ignore=[]):
@@ -85,7 +79,7 @@ def get_navbar(paths):
         # generate nav automatically from file names
         names = [f.split('/')[1].split('.')[0] for f in paths]
         names = ['Home' if n == 'index' else n.title() for n in names]
-    paths = [os.path.splitext(p)[0] + '.html' for p in paths]
+    paths = [os.path.splitext(p)[0] + '.html' for p in paths]    # FIXME
     nav_templ = '<a href="%s">%s</a>\n&nbsp;&nbsp;&nbsp;&nbsp;'
     html_nav = '\n'.join([nav_templ % (p, n) for p, n in zip(paths, names)])
     return '<p>\n' + html_nav + '\n</p>'
