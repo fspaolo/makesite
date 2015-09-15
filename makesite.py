@@ -23,8 +23,8 @@ import datetime as dt
 import markdown as md
 from collections import OrderedDict
 
-# files, folders or images to ignore
-ignore = ['.git', '.gitignore', 'README.md', 'TODO', 'LICENSE']
+# Markdown files and folders to ignore
+ignore = ['README.md', 'example']
 
 # file names and extentions
 python_file = 'makesite.py'

@@ -1,0 +1,198 @@
+/*
+Theme for: makesite.py
+Fernando Paolo <fspaolo@gmail.com>
+Sep 12, 2015
+*/
+
+/* reset (important for responsive layout) */
+
+html, body, div, p, img, ul, ol,
+footer, header, section, h1, span, 
+time, hr, hgroup, a img, aside, nav, 
+form, input, article, h2, h3, h4, 
+label, textarea, small {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    }
+:focus {
+    outline:none; 
+    }
+::-moz-selection, ::selection { 
+    color: #fff;
+    background: #c22a09; 
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* end reset */   
+
+html {
+    height: 100%;
+    display: block;
+}
+   
+body {
+    font: 300 17px Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    background: #fff;
+    display: block;
+}
+
+strong {
+    font-weight: 500;
+    color: #727272;
+}
+
+hr {
+    border: none; 
+    height: 1px;
+    color: #ddd; /* old IE */
+    background-color: #ddd; /* Modern Browsers */
+    margin-top: 50px;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img, a img {
+    display: block;
+    max-width: 98%;
+    background: #fff !important;
+    border: solid 1px #ccc;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.thumb {
+    max-width: 100%;
+    margin-bottom: -19px;
+}
+
+code {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 25px;
+    /*border-left: 2px solid #ccc;*/
+    border-left: 5px solid #eee;
+}
+
+blockquote {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 25px;
+    /*border-left: 2px solid #ccc;*/
+    border-left: 5px solid #eee;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    word-spacing: 2px;
+    color: #444;
+    text-align: left;
+    display: block;
+    clear: both;
+    word-break: break-word;
+    text-rendering: optimizeLegibility;
+    margin-top: 35px;
+    padding: 0;
+}
+
+h1, h2 {
+    letter-spacing: -1px;
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#pagewrap {
+    max-width: 650px;
+    padding: 0;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+#headerwrap {
+    font-weight: 300;
+    font-size: 15px;
+    color: #666;
+    text-align: left;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#headerwrap span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 56px;
+    letter-spacing: -2px;
+}
+
+#navwrap {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 15px;
+}
+
+#footerwrap {
+    font-weight: 300;
+    font-size: small;
+    color: #a5a5a5;
+    text-align: center;
+    padding 0;
+    margin-top: 4em;
+    margin-bottom: 3.6em;
+}
+
+#articlewrap p {
+    display: block;
+    line-height: 1.5em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#articlewrap ul,
+#articlewrap ol {
+    display: block;
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+#articlewrap li {
+    display: list-item;
+}
+
+#articlewrap ul p,
+#articlewrap li p {
+    padding: 0;
+}
