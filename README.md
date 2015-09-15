@@ -29,7 +29,7 @@ with the following concepts in mind:
 * Extremely simple (very easy to understand and modify)
 * No installation required (run everywhere)
 * No setup required (provide a text file, get an HTML page)
-* No templating languages (just pure HTML, CSS and Python!)
+* No templating language (just pure HTML, CSS and Python!)
 * All functions in one single script (that I can actually understand)
 * Navigation bar generated for you (customizable if you prefer)
 

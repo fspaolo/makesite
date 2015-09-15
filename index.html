@@ -21,11 +21,6 @@
     <body>
         <!-- PAGE -->
         <div id="pagewrap">
-            <!-- HEADER -->
-            <header id="headerwrap">
-                <span>The Header</span>
-                <p>A brief description of the website.</p>
-            </header>
             <!-- NAVIGATION -->
             <nav id="navwrap">
                 <p>
@@ -33,14 +28,88 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 </p>
             </nav>
+            <!-- HEADER -->
+            <header id="headerwrap">
+                <span>Makesite.py</span>
+                <p>Extremely simple static site generator.</p>
+            </header>
             <!-- ARTICLE -->
             <article id="articlewrap">
-                <h1>Hello world!</h1>
-<p>Check the other pages for formatting examples! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel sollicitudin libero. Praesent metus turpis, molestie quis dui at, elementum luctus erat. Fusce porttitor fringilla magna, ut pharetra magna imperdiet ac. Sed ac maximus libero. Nam at mi nulla. Aenean nunc velit, molestie quis venenatis nec, euismod ac ex. Nam nec faucibus arcu. Aenean libero sem, porttitor sit amet massa in, faucibus tempus lorem. Aliquam consectetur nunc ac fringilla dignissim. Phasellus eu sollicitudin justo. Quisque accumsan, lectus eget sollicitudin vehicula, urna velit tincidunt arcu, vel sodales purus nisi et erat. Sed ac tortor malesuada erat vestibulum ornare.</p>
+                <p><code>Makesite.py</code> is an extremely simple static site generator written in Python.
+You write your content in text files and <code>Makesite.py</code> does the rest for you.
+It works by taking as input an HTML template, a CSS style, and a bunch of
+text files (in Markdown) and generating static HTML pages.</p>
+<h2>How it works</h2>
+<p>Place the following files into a folder:</p>
+<pre><code>makesite.py   -- the script to generate each webpage
+template.html -- the skeleton of each webpage
+style.css     -- the style of each webpage
+index.md      -- the content of a webpage
+</code></pre>
+<p>and run:</p>
+<pre><code>python makesite.py
+</code></pre>
+<p>This will generate an <code>index.html</code>.</p>
+<h2>What this is</h2>
+<p><code>Makesite.py</code> is not a blog generator! If a blog is what you are looking for, there are
+a few dozens of blog softwares out there. <code>Makesite.py</code> was developed
+with the following concepts in mind:</p>
+<ul>
+<li>Extremely simple (very easy to understand and modify)</li>
+<li>No installation required (run everywhere)</li>
+<li>No setup required (provide a text file, get an HTML page)</li>
+<li>No templating language (just pure HTML, CSS and Python!)</li>
+<li>All functions in one single script (that I can actually understand)</li>
+<li>Navigation bar generated for you (customizable if you prefer)</li>
+</ul>
+<p>If all you want is to simply put HTML content on the web (such as a personal
+webpage), then this might be the right tool for you.</p>
+<p>Please note that this project is still in the experimental stage.</p>
+<h2>Example</h2>
+<p>To get you started we provide a full basic website structure (with a <code>Makefile</code>
+included):</p>
+<pre><code>example/
+   |__ Makefile
+   |__ makesite.py 
+   |__ template.html 
+   |__ style.html 
+   |__ index.md 
+   |__ first/ 
+          |__ index.md 
+   |__ second/ 
+          |__ index.md 
+   |__ third/ 
+          |__ index.md
+</code></pre>
+<p>To get the HTML pages: </p>
+<pre><code>cd example
+python makesite.py
+</code></pre>
+<p>or using the <code>Makefile</code>:</p>
+<pre><code>cd example
+make
+</code></pre>
+<p>Now all you have to do is replace the content of the Markdown files (<code>.md</code>)
+with your own. For each Markdown file an HTML page will be created and added
+to the navigation bar. Then you just upload the existent and generated files
+in the <code>example</code> folder to any webserver.</p>
+<p>In this example each webpage (Markdown file) is placed into a sub-folder to
+keep things organized (with the exception of the website's landing page, the
+'Home' page), but you can have all pages in the same folder if you prefer.</p>
+<p>To customize your website you can play around with the <code>style.css</code> and/or
+<code>template.html</code>.</p>
+<p>A <code>Makefile</code> is also provided for convenience. For example, to generate the
+website and upload it to <a href="https://pages.github.com/">GitHub</a> you can do:</p>
+<pre><code>cd example
+make
+make show
+make git
+</code></pre>
+<p>--Happy coding!</p>
             </article>
             <!-- FOOTER -->
             <footer id="footerwrap">
-                <p>A footer to appear on every page. Powered by makesite.py</p>
+            <p>Powered by <a href="http://fspaolo.github.io/makesite">Makesite.py</a></p>
             </footer>
         </div>
     </body>

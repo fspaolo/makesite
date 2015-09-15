@@ -41,7 +41,7 @@ html {
    
 body {
     font: 300 17px Georgia, "Times New Roman", Times, serif;
-    color: #555;
+    color: #333;
     background: #fff;
     display: block;
 }
@@ -83,12 +83,19 @@ img, a img {
 }
 
 code {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 25px;
-    /*border-left: 2px solid #ccc;*/
-    border-left: 5px solid #eee;
+    padding: 3px;
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    background-color: #f7f7f7;
+    font-size: 90%;
+}
+
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 90%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
 }
 
 blockquote {
@@ -96,14 +103,13 @@ blockquote {
     margin-bottom: 20px;
     margin-left: 0;
     padding-left: 25px;
-    /*border-left: 2px solid #ccc;*/
     border-left: 5px solid #eee;
 } 
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     word-spacing: 2px;
-    color: #444;
+    color: #111;
     text-align: left;
     display: block;
     clear: both;
@@ -119,12 +125,12 @@ h1, h2 {
 
 h1 {
     font-size: 2.2em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2 {
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 1.6em;
+    font-weight: 500;
 }
 
 h3 {
@@ -145,21 +151,22 @@ h3 {
     color: #666;
     text-align: left;
     padding: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
-
 
 #headerwrap span {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 56px;
+    font-size: 58px;
     letter-spacing: -2px;
+    color: #444;
 }
 
 #navwrap {
     text-transform: capitalize;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
+    margin-top: 40px;
 }
 
 #footerwrap {
@@ -184,8 +191,8 @@ h3 {
 #articlewrap ul,
 #articlewrap ol {
     display: block;
-    line-height: 24px;
-    margin-left: 50px;
+    line-height: 26px;
+    margin-left: 18px;
 }
 
 #articlewrap li {
