@@ -3,3 +3,4 @@
   text file automaticaly
 - write documentation
 - replace extention of text files independently from format (i.e., .md, .markdown)
+- add css responsive layout for smart phones
