@@ -79,7 +79,7 @@ def get_navbar(paths):
         # generate nav automatically from file names
         names = [f.split('/')[1].split('.')[0] for f in paths]
         names = ['Home' if n == 'index' else n.title() for n in names]
-    paths = [os.path.splitext(p)[0] + '.html' for p in paths]    # FIXME
+    paths = [p.replace('.md', '.html') for p in paths]    # FIXME
     nav_templ = '<a href="%s">%s</a>\n&nbsp;&nbsp;&nbsp;&nbsp;'
     html_nav = '\n'.join([nav_templ % (p, n) for p, n in zip(paths, names)])
     return '<p>\n' + html_nav + '\n</p>'
