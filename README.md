@@ -36,12 +36,14 @@ with the following concepts in mind:
 If all you want is to simply put HTML content on the web (such as a personal
 webpage), then this might be the right tool for you.
 
+Please note that this project is still in the experimental stage.
+
 ## Example
 
 To get you started we provide a full basic website structure (with a `Makefile`
 included):
 
-    makesite/
+    example/
        |__ Makefile
        |__ makesite.py 
        |__ template.html 
@@ -56,17 +58,18 @@ included):
 
 To get the HTML pages: 
 
-    cd makesite
+    cd example
     python makesite.py
 
 or using the `Makefile`:
 
-    cd makesite
+    cd example
     make
 
 Now all you have to do is replace the content of the Markdown files (`.md`)
 with your own. For each Markdown file an HTML page will be created and added
-to the navigation bar. Then you just upload all this content to any webserver.
+to the navigation bar. Then you just upload the existent and generated files
+in the `example` folder to any webserver.
 
 In this example each webpage (Markdown file) is placed into a sub-folder to
 keep things organized (with the exception of the website's landing page, the
@@ -78,7 +81,7 @@ To customize your website you can play around with the `style.css` and/or
 A `Makefile` is also provided for convenience. For example, to generate the
 website and upload it to [GitHub](https://pages.github.com/) you can do:
 
-    cd makesite
+    cd example
     make
     make show
     make git
