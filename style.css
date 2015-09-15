@@ -148,7 +148,7 @@ h3 {
 #headerwrap {
     font-weight: 300;
     font-size: 15px;
-    color: #666;
+    color: #555;
     text-align: left;
     padding: 0;
     margin-top: 35px;
@@ -159,7 +159,7 @@ h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 58px;
     letter-spacing: -2px;
-    color: #444;
+    color: #333;
 }
 
 #navwrap {
@@ -182,8 +182,8 @@ h3 {
 #articlewrap p {
     display: block;
     line-height: 1.5em;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    -webkit-margin-before: 1.1em;
+    -webkit-margin-after: 1.1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
