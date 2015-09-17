@@ -40,24 +40,26 @@ You write your content in text files and <code>Makesite.py</code> does the rest 
 It works by taking as input an HTML template, a CSS style, and a bunch of
 text files (in Markdown) and generating static HTML pages.</p>
 <h2>How it works</h2>
-<p>Place the following files into a folder:</p>
-<pre><code>makesite.py   -- the script to generate each webpage
-template.html -- the skeleton of each webpage
-style.css     -- the style of each webpage
-index.md      -- the content of a webpage
+<p>Download and place the following files into a folder:</p>
+<pre><code>makesite.py   -- the Python script to generate each webpage
+template.html -- the HTML skeleton of each webpage
+style.css     -- the CSS style of each webpage
+index.md      -- the text (Markdown) content of a webpage
 </code></pre>
 <p>and run:</p>
 <pre><code>python makesite.py
 </code></pre>
-<p>This will generate an <code>index.html</code>.</p>
-<h2>What this is</h2>
-<p><code>Makesite.py</code> is not a blog generator! If a blog is what you are looking for, there are
-a few dozens of blog softwares out there. <code>Makesite.py</code> was developed
+<p>This will generate an <code>index.html</code> that you can display with your browser.</p>
+<p>Note that every time you make any modification you need to run
+<code>python makesite.py</code> again (that's what a <em>static</em> site means).</p>
+<h2>What it is</h2>
+<p><code>Makesite.py</code> is not a blog generator! If a blog is what you are looking for,
+there are a few dozens of blog softwares out there. <code>Makesite.py</code> was developed
 with the following concepts in mind:</p>
 <ul>
 <li>Extremely simple (very easy to understand and modify)</li>
 <li>No installation required (run everywhere)</li>
-<li>No setup required (provide a text file, get an HTML page)</li>
+<li>No configuration required (provide a text file, get an HTML page)</li>
 <li>No templating language (just pure HTML, CSS and Python!)</li>
 <li>All functions in one single script (that I can actually understand)</li>
 <li>Navigation bar generated for you (customizable if you prefer)</li>
@@ -72,7 +74,7 @@ included):</p>
    |__ Makefile
    |__ makesite.py 
    |__ template.html 
-   |__ style.html 
+   |__ style.css
    |__ index.md 
    |__ first/ 
           |__ index.md 
@@ -81,7 +83,7 @@ included):</p>
    |__ third/ 
           |__ index.md
 </code></pre>
-<p>To get the HTML pages: </p>
+<p>To get the HTML pages (after you've downloaded the folder <code>example</code>): </p>
 <pre><code>cd example
 python makesite.py
 </code></pre>
@@ -91,20 +93,25 @@ make
 </code></pre>
 <p>Now all you have to do is replace the content of the Markdown files (<code>.md</code>)
 with your own. For each Markdown file an HTML page will be created and added
-to the navigation bar. Then you just upload the existent and generated files
-in the <code>example</code> folder to any webserver.</p>
+to the navigation bar. Then you just upload the generated files in the
+<code>example</code> folder (<code>.html</code>, <code>.css</code>, etc.) to any webserver.</p>
 <p>In this example each webpage (Markdown file) is placed into a sub-folder to
 keep things organized (with the exception of the website's landing page, the
-'Home' page), but you can have all pages in the same folder if you prefer.</p>
+'Home' page), but you can have all the pages in the same folder if you prefer.</p>
 <p>To customize your website you can play around with the <code>style.css</code> and/or
 <code>template.html</code>.</p>
 <p>A <code>Makefile</code> is also provided for convenience. For example, to generate the
 website and upload it to <a href="https://pages.github.com/">GitHub</a> you can do:</p>
-<pre><code>cd example
-make
-make show
+<pre><code>cd example  
+make  
+make show  
 make git
 </code></pre>
+<p>The <code>Makefile</code> will work on Mac/Linux.</p>
+<h2>How to</h2>
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a><br>
+<a href="http://www.w3schools.com/html/html_intro.asp">HTML</a><br>
+<a href="http://www.w3schools.com/css/">CSS</a>  </p>
 <p>--Happy coding!</p>
             </article>
             <!-- FOOTER -->

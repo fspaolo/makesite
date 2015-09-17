@@ -92,9 +92,9 @@ code {
 pre {
     padding: 16px;
     overflow: auto;
-    font-size: 90%;
+    font-size: 95%;
     line-height: 1.45;
-    background-color: #f7f7f7;
+    background-color: #f6f6f6;
     border-radius: 3px;
 }
 
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     word-break: break-word;
     text-rendering: optimizeLegibility;
     margin-top: 35px;
-    margin-bottom: -2px;
+    margin-bottom: -3px;
     padding: 0;
 }
 
@@ -130,7 +130,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.65em;
     font-weight: 500;
 }
 
@@ -165,8 +165,8 @@ h3 {
 
 #navwrap {
     text-transform: capitalize;
-    text-align: left;
-    font-size: 16px;
+    text-align: right;
+    font-size: 17px;
     margin-top: 40px;
 }
 
