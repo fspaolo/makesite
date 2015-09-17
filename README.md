@@ -7,28 +7,31 @@ text files (in Markdown) and generating static HTML pages.
 
 ## How it works
 
-Place the following files into a folder:
+Download and place the following files into a folder:
 
-    makesite.py   -- the script to generate each webpage
-    template.html -- the skeleton of each webpage
-    style.css     -- the style of each webpage
-    index.md      -- the content of a webpage
+    makesite.py    -- the Python script to generate each webpage
+    template.html  -- the HTML skeleton of each webpage
+    style.css      -- the CSS style of each webpage
+    index.md       -- the text (Markdown) content of a webpage
 
 and run:
 
     python makesite.py
 
-This will generate an `index.html`.
+This will generate an `index.html` that you can display with your browser.
 
-## What this is
+Note that every time you make any modification you need to run
+`python makesite.py` again (that's what a *static* site means).
 
-`Makesite.py` is not a blog generator! If a blog is what you are looking for, there are
-a few dozens of blog softwares out there. `Makesite.py` was developed
+## What it is
+
+`Makesite.py` is not a blog generator! If a blog is what you are looking for,
+there are a few dozens of blog softwares out there. `Makesite.py` was developed
 with the following concepts in mind:
 
 * Extremely simple (very easy to understand and modify)
 * No installation required (run everywhere)
-* No setup required (provide a text file, get an HTML page)
+* No configuration required (provide a text file, get an HTML page)
 * No templating language (just pure HTML, CSS and Python!)
 * All functions in one single script (that I can actually understand)
 * Navigation bar generated for you (customizable if you prefer)
@@ -47,7 +50,7 @@ included):
        |__ Makefile
        |__ makesite.py 
        |__ template.html 
-       |__ style.html 
+       |__ style.css
        |__ index.md 
        |__ first/ 
               |__ index.md 
@@ -56,7 +59,7 @@ included):
        |__ third/ 
               |__ index.md 
 
-To get the HTML pages: 
+To get the HTML pages (after you've downloaded the folder `example`): 
 
     cd example
     python makesite.py
@@ -68,12 +71,12 @@ or using the `Makefile`:
 
 Now all you have to do is replace the content of the Markdown files (`.md`)
 with your own. For each Markdown file an HTML page will be created and added
-to the navigation bar. Then you just upload the existent and generated files
-in the `example` folder to any webserver.
+to the navigation bar. Then you just upload the generated files in the
+`example` folder (`.html`, `.css`, etc.) to any webserver.
 
 In this example each webpage (Markdown file) is placed into a sub-folder to
 keep things organized (with the exception of the website's landing page, the
-'Home' page), but you can have all pages in the same folder if you prefer.
+'Home' page), but you can have all the pages in the same folder if you prefer.
 
 To customize your website you can play around with the `style.css` and/or
 `template.html`.
@@ -81,9 +84,17 @@ To customize your website you can play around with the `style.css` and/or
 A `Makefile` is also provided for convenience. For example, to generate the
 website and upload it to [GitHub](https://pages.github.com/) you can do:
 
-    cd example
-    make
-    make show
-    make git
+    cd example  
+    make  
+    make show  
+    make git  
+
+The `Makefile` will work on Mac/Linux.
+
+## How to 
+
+[Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+[HTML](http://www.w3schools.com/html/html_intro.asp)  
+[CSS](http://www.w3schools.com/css/)  
 
 --Happy coding!
