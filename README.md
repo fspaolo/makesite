@@ -98,3 +98,5 @@ The `Makefile` will work on Mac/Linux.
 [CSS](http://www.w3schools.com/css/)  
 
 --Happy coding!
+
+**Questions/Comments?** Send me an email: [fspaolo@gmail.com](mailto:fspaolo@gmail.com)

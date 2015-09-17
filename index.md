@@ -95,4 +95,4 @@ The `Makefile` will work on Mac/Linux.
 [HTML](http://www.w3schools.com/html/html_intro.asp)  
 [CSS](http://www.w3schools.com/css/)  
 
---Happy coding!
+**Questions/Comments?** Send me an email: [fspaolo@gmail.com](mailto:fspaolo@gmail.com)
