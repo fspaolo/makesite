@@ -69,25 +69,25 @@ or using the `Makefile`:
 
 Now all you have to do is replace the content of the Markdown files (`.md`)
 with your own. For each Markdown file an HTML page will be created and added
-to the navigation bar. Then you just upload the generated files in the
-`example` folder (`.html`, `.css`, etc.) to any webserver.
+to the navigation bar. Then you just upload the content of the `example` folder
+(`.html`, `.css`, `.jpg`, etc.) to any webserver.
 
 In this example each webpage (Markdown file) is placed into a sub-folder to
 keep things organized (with the exception of the website's landing page, the
-'Home' page), but you can have all the pages in the same folder if you prefer.
+'Home' page), but you can have all the pages in the same folder if you prefer
+(just give them different names).
 
 To customize your website you can play around with the `style.css` and/or
-`template.html`.
+`template.html` (see how below).
 
-A `Makefile` is also provided for convenience. For example, to generate the
-website and upload it to [GitHub](https://pages.github.com/) you can do:
+A `Makefile` is also provided for convenience. For example, on a Mac/Linux
+machine you can generate the website, see it in your browser, and upload it to
+[GitHub](https://pages.github.com/) as:
 
     cd example  
     make  
     make show  
     make git  
-
-The `Makefile` will work on Mac/Linux.
 
 ## How to 
 
