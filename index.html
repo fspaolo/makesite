@@ -93,21 +93,22 @@ make
 </code></pre>
 <p>Now all you have to do is replace the content of the Markdown files (<code>.md</code>)
 with your own. For each Markdown file an HTML page will be created and added
-to the navigation bar. Then you just upload the generated files in the
-<code>example</code> folder (<code>.html</code>, <code>.css</code>, etc.) to any webserver.</p>
+to the navigation bar. Then you just upload the content of the <code>example</code> folder
+(<code>.html</code>, <code>.css</code>, <code>.jpg</code>, etc.) to any webserver.</p>
 <p>In this example each webpage (Markdown file) is placed into a sub-folder to
 keep things organized (with the exception of the website's landing page, the
-'Home' page), but you can have all the pages in the same folder if you prefer.</p>
+'Home' page), but you can have all the pages in the same folder if you prefer
+(just give them different names).</p>
 <p>To customize your website you can play around with the <code>style.css</code> and/or
-<code>template.html</code>.</p>
-<p>A <code>Makefile</code> is also provided for convenience. For example, to generate the
-website and upload it to <a href="https://pages.github.com/">GitHub</a> you can do:</p>
+<code>template.html</code> (see how below).</p>
+<p>A <code>Makefile</code> is also provided for convenience. For example, on a Mac/Linux
+machine you can generate the website, see it in your browser, and upload it to
+<a href="https://pages.github.com/">GitHub</a> as:</p>
 <pre><code>cd example  
 make  
 make show  
 make git
 </code></pre>
-<p>The <code>Makefile</code> will work on Mac/Linux.</p>
 <h2>How to</h2>
 <p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a><br>
 <a href="http://www.w3schools.com/html/html_intro.asp">HTML</a><br>
