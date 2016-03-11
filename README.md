@@ -65,7 +65,7 @@ To generate the HTML pages (after you've downloaded the folder `example`):
 or using the `Makefile`:
 
     cd example
-    make
+    make site
 
 Now all you have to do is replace the content of the Markdown files (`.md`)
 with your own. For each Markdown file an HTML page will be created and added
