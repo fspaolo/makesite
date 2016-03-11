@@ -40,13 +40,13 @@ You write your content in text files and <code>Makesite.py</code> does the rest 
 It works by taking as input an HTML template, a CSS style, and a bunch of
 text files (in Markdown) and generating static HTML pages.</p>
 <h2>How it works</h2>
-<p>Download and place the following files into a folder:</p>
+<p>1) Download and place the following files into a folder: </p>
 <pre><code>makesite.py    -- the Python script to generate each webpage
 template.html  -- the HTML skeleton of each webpage
 style.css      -- the CSS style of each webpage
-index.md       -- the text (Markdown) content of a webpage
+index.md       -- the text content of a webpage (Markdown)
 </code></pre>
-<p>and run:</p>
+<p>2) and run: </p>
 <pre><code>python makesite.py
 </code></pre>
 <p>This will generate an <code>index.html</code> that you can display with your browser.</p>
@@ -54,19 +54,19 @@ index.md       -- the text (Markdown) content of a webpage
 <code>python makesite.py</code> again (that's what a <em>static</em> site means).</p>
 <h2>What it is</h2>
 <p><code>Makesite.py</code> is not a blog generator! If a blog is what you are looking for,
-there are a few dozens of blog softwares out there. <code>Makesite.py</code> was developed
+there are a few dozens blog softwares out there. <code>Makesite.py</code> was developed
 with the following concepts in mind:</p>
 <ul>
 <li>Extremely simple (very easy to understand and modify)</li>
-<li>No installation required (run everywhere)</li>
-<li>No configuration required (provide a text file, get an HTML page)</li>
+<li>No installation required (run it everywhere)</li>
+<li>No configuration required (you provide a text file, you get an HTML page)</li>
 <li>No templating language (just pure HTML, CSS and Python!)</li>
 <li>All functions in one single script (that I can actually understand)</li>
 <li>Navigation bar generated for you (customizable if you prefer)</li>
 </ul>
 <p>If all you want is to simply put HTML content on the web (such as a personal
 webpage), then this might be the right tool for you.</p>
-<p>Please note that this project is still in the experimental stage.</p>
+<p>Please note that this project is under development. Features are being added or modified.</p>
 <h2>Example</h2>
 <p>To get you started we provide a full basic website structure (with a <code>Makefile</code>
 included):</p>
@@ -83,7 +83,7 @@ included):</p>
    |__ third/ 
           |__ index.md
 </code></pre>
-<p>To get the HTML pages (after you've downloaded the folder <code>example</code>): </p>
+<p>To generate the HTML pages (after you've downloaded the folder <code>example</code>): </p>
 <pre><code>cd example
 python makesite.py
 </code></pre>
@@ -94,16 +94,16 @@ make
 <p>Now all you have to do is replace the content of the Markdown files (<code>.md</code>)
 with your own. For each Markdown file an HTML page will be created and added
 to the navigation bar. Then you just upload the content of the <code>example</code> folder
-(<code>.html</code>, <code>.css</code>, <code>.jpg</code>, etc.) to any webserver.</p>
-<p>In this example each webpage (Markdown file) is placed into a sub-folder to
-keep things organized (with the exception of the website's landing page, the
+(the <code>.html</code>, <code>.css</code>, <code>.jpg</code>, etc.) to any webserver.</p>
+<p>In the above example each webpage (Markdown file) is placed into a sub-folder 
+to keep things organized (with the exception of the website's landing page, the
 'Home' page), but you can have all the pages in the same folder if you prefer
 (just give them different names).</p>
 <p>To customize your website you can play around with the <code>style.css</code> and/or
 <code>template.html</code> (see how below).</p>
 <p>A <code>Makefile</code> is also provided for convenience. For example, on a Mac/Linux
-machine you can generate the website, see it in your browser, and upload it to
-<a href="https://pages.github.com/">GitHub</a> as:</p>
+machine you can generate the website, display it in your browser, and upload
+it to <a href="https://pages.github.com/">GitHub</a> as:</p>
 <pre><code>cd example  
 make  
 make show  
