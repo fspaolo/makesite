@@ -85,7 +85,7 @@ machine you can generate the website, display it in your browser, and upload
 it to [GitHub](https://pages.github.com/) as:
 
     cd example  
-    make  
+    make site
     make show  
     make git  
 
