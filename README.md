@@ -1,4 +1,4 @@
-`Makesite.py` is an extremely simple (and stremely light) static site
+`Makesite.py` is an extremely simple (and extremely light) static site
 generator written in Python. You write your content in text files and
 `Makesite.py` does the rest for you. It works by taking as input an
 HTML template, a CSS style, and a bunch of text files (in Markdown)
