@@ -17,4 +17,4 @@ show:
 git:
 	git commit -am 'updated site'
 	git push
-
+	#git push -f origin master:gh-pages # to merge 'master' into 'gh-pages'

@@ -14,9 +14,11 @@ The markup language can be modified by editing the function 'get_content()'.
 Absolute paths must start with './', e.g., ./style.css, ./about/index.html.
 
 Fernando Paolo <fspaolo@gmail.com>
-Apr 8, 2015
+First version: Apr 8, 2015
 
 """
+from __future__ import print_function
+
 import os
 import fnmatch
 import datetime as dt
@@ -118,4 +120,4 @@ for text_file in text_files:
 
         base = os.path.splitext(text_file)[0]
         f = open(base + '.html', 'w').write(html_template)
-        print text_file, '-> to html'
+        print(text_file, ' -> to html')

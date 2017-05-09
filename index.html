@@ -35,10 +35,11 @@
             </header>
             <!-- ARTICLE -->
             <article id="articlewrap">
-                <p><code>Makesite.py</code> is an extremely simple static site generator written in Python.
-You write your content in text files and <code>Makesite.py</code> does the rest for you.
-It works by taking as input an HTML template, a CSS style, and a bunch of
-text files (in Markdown) and generating static HTML pages.</p>
+                <p><code>Makesite.py</code> is an extremely simple (and extremely light) static site
+generator written in Python. You write your content in text files and
+<code>Makesite.py</code> does the rest for you. It works by taking as input an HTML
+template, a CSS style, and a bunch of text files (in Markdown) and
+generating static HTML pages.</p>
 <h2>How it works</h2>
 <p>1) Download and place the following files into a folder: </p>
 <pre><code>makesite.py    -- the Python script to generate each webpage
@@ -46,29 +47,29 @@ template.html  -- the HTML skeleton of each webpage
 style.css      -- the CSS style of each webpage
 index.md       -- the text content of a webpage (Markdown)
 </code></pre>
-<p>2) and run: </p>
+<p>2) Run: </p>
 <pre><code>python makesite.py
 </code></pre>
 <p>This will generate an <code>index.html</code> that you can display with your browser.</p>
 <p>Note that every time you make any modification you need to run
-<code>python makesite.py</code> again (that's what a <em>static</em> site means).</p>
+<code>python makesite.py</code> again (that's what <em>static</em> site means).</p>
 <h2>What it is</h2>
 <p><code>Makesite.py</code> is not a blog generator! If a blog is what you are looking for,
-there are a few dozens blog softwares out there. <code>Makesite.py</code> was developed
+there are a few dozen blog softwares out there. <code>Makesite.py</code> was developed
 with the following concepts in mind:</p>
 <ul>
 <li>Extremely simple (very easy to understand and modify)</li>
-<li>No installation required (run it everywhere)</li>
-<li>No configuration required (you provide a text file, you get an HTML page)</li>
+<li>No installation required (run it anywhere)</li>
+<li>No configuration required (you provide a text file, you get a HTML page)</li>
 <li>No templating language (just pure HTML, CSS and Python!)</li>
 <li>All functions in one single script (that I can actually understand)</li>
-<li>Navigation bar generated for you (customizable if you prefer)</li>
+<li>Navigation bar generated for you (customizable if you want)</li>
 </ul>
 <p>If all you want is to simply put HTML content on the web (such as a personal
 webpage), then this might be the right tool for you.</p>
 <p>Please note that this project is under development. Features are being added or modified.</p>
 <h2>Example</h2>
-<p>To get you started we provide a full basic website structure (with a <code>Makefile</code>
+<p>To get you started there a basic website example (with a <code>Makefile</code>
 included):</p>
 <pre><code>example/
    |__ Makefile
@@ -109,11 +110,13 @@ make site
 make show  
 make git
 </code></pre>
+<h2>In use</h2>
+<p>Check my own website made with <code>Makesite.py</code>: <a href="http://fspaolo.net">http://fspaolo.net</a>  </p>
 <h2>How to</h2>
 <p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a><br>
 <a href="http://www.w3schools.com/html/html_intro.asp">HTML</a><br>
 <a href="http://www.w3schools.com/css/">CSS</a>  </p>
-<p><strong>Questions/Comments?</strong> Send me an email: <a href="mailto:fspaolo@gmail.com">fspaolo@gmail.com</a></p>
+<p><strong>Questions/Comments?</strong> Send me an email: <a href="mailto:fspaolo@gmail.com?Subject=[Makesite.py]">fspaolo@gmail.com</a></p>
             </article>
             <!-- FOOTER -->
             <footer id="footerwrap">
