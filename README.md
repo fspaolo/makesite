@@ -1,7 +1,8 @@
-`Makesite.py` is an extremely simple static site generator written in Python.
-You write your content in text files and `Makesite.py` does the rest for you.
-It works by taking as input an HTML template, a CSS style, and a bunch of
-text files (in Markdown) and generating static HTML pages.
+`Makesite.py` is an extremely simple (and stremely light) static site
+generator written in Python. You write your content in text files and
+`Makesite.py` does the rest for you. It works by taking as input an
+HTML template, a CSS style, and a bunch of text files (in Markdown)
+and generating static HTML pages.
 
 ## How it works
 
@@ -12,36 +13,36 @@ text files (in Markdown) and generating static HTML pages.
     style.css      -- the CSS style of each webpage
     index.md       -- the text content of a webpage (Markdown) 
 
-2) and run: 
+2) Run: 
 
     python makesite.py
 
 This will generate an `index.html` that you can display with your browser.
 
 Note that every time you make any modification you need to run
-`python makesite.py` again (that's what a *static* site means).
+`python makesite.py` again (that's what *static* site means).
 
 ## What it is
 
 `Makesite.py` is not a blog generator! If a blog is what you are looking for,
-there are a few dozens blog softwares out there. `Makesite.py` was developed
+there are a few dozen blog softwares out there. `Makesite.py` was developed
 with the following concepts in mind:
 
 * Extremely simple (very easy to understand and modify)
-* No installation required (run it everywhere)
+* No installation required (run it anywhere)
 * No configuration required (you provide a text file, you get an HTML page)
 * No templating language (just pure HTML, CSS and Python!)
 * All functions in one single script (that I can actually understand)
-* Navigation bar generated for you (customizable if you prefer)
+* Navigation bar generated for you (customizable if you want)
 
 If all you want is to simply put HTML content on the web (such as a personal
 webpage), then this might be the right tool for you.
 
-Please note that this project is under development. Features are being added or modified.
+Please note that this project is under development. Features are being added and modified.
 
 ## Example
 
-To get you started we provide a full basic website structure (with a `Makefile`
+To get you started there is a full basic website example (with a `Makefile`
 included):
 
     example/
@@ -88,6 +89,10 @@ it to [GitHub](https://pages.github.com/) as:
     make site
     make show  
     make git  
+
+## In use
+
+Check out my own website made with `Makesite.py`: [fspaolo.net](http://fspaolo.net)
 
 ## How to 
 
