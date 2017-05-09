@@ -6,7 +6,8 @@ and generating static HTML pages.
 
 ## How it works
 
-1) Download and place the following files into a folder: 
+1) [Download](https://github.com/fspaolo/makesite) and place the following
+files into a folder: 
 
     makesite.py    -- the Python script to generate each webpage
     template.html  -- the HTML skeleton of each webpage
