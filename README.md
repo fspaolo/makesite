@@ -9,10 +9,10 @@ and generating static HTML pages.
 1) [Download](https://github.com/fspaolo/makesite) and place the following
 files into a folder: 
 
-    makesite.py    -- the Python script to generate each webpage
-    template.html  -- the HTML skeleton of each webpage
-    style.css      -- the CSS style of each webpage
-    index.md       -- the text content of a webpage (Markdown) 
+    makesite.py    -- the Python script to generate each webpage  
+    template.html  -- the HTML skeleton of each webpage  
+    style.css      -- the CSS style of each webpage  
+    index.md       -- the text content of a webpage (Markdown)   
 
 2) Run: 
 
