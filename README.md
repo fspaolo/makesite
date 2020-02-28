@@ -1,18 +1,16 @@
-`Makesite.py` is an extremely simple (and extremely light) static site
-generator written in Python. You write your content in text files and
-`Makesite.py` does the rest for you. It works by taking as input an
-HTML template, a CSS style, and a bunch of text files (in Markdown)
-and generating static HTML pages.
+`Makesite.py` -- an extremely simple (and extremely light) static site generator written in Python.
+
+You write your content in text files and `Makesite.py` does the rest for you. It works by taking as input an HTML template, a CSS style, and a bunch of text files (in Markdown) and generating static HTML pages.
 
 ## How it works
 
 1) [Download](https://github.com/fspaolo/makesite) and place the following
 files into a folder: 
 
-    makesite.py    -- the Python script to generate each webpage  
-    template.html  -- the HTML skeleton of each webpage  
-    style.css      -- the CSS style of each webpage  
-    index.md       -- the text content of a webpage (Markdown)   
+    `makesite.py`    -- the Python script to generate each webpage  
+    `template.html`  -- the HTML skeleton of each webpage  
+    `style.css`      -- the CSS style of each webpage  
+    `index.md`       -- the text content of a webpage (Markdown)   
 
 2) Run: 
 
@@ -20,21 +18,20 @@ files into a folder:
 
 This will generate an `index.html` that you can display with your browser.
 
-Note that every time you make any modification you need to run
-`python makesite.py` again (that's what *static* site means).
+Note that every time you make a modification you need to run `python makesite.py` again (that's what *static* site means).
 
 ## What it is
 
 `Makesite.py` is not a blog generator! If a blog is what you are looking for,
-there are a few dozen blog softwares out there. `Makesite.py` was developed
-with the following concepts in mind:
+there are a few dozen blog tools out there. `Makesite.py` was developed
+with the following concepts in mind:  
 
-* Extremely simple (very easy to understand and modify)
-* No installation required (run it anywhere)
-* No configuration required (you provide a text file, you get an HTML page)
-* No templating language (just pure HTML, CSS and Python!)
-* All functions in one single script (that I can actually understand)
-* Navigation bar generated for you (customizable if you want)
+* Extremely simple (very easy to understand and modify)  
+* No installation required (run it anywhere)  
+* No configuration required (you provide a text file, you get an HTML page)  
+* No templating language (just pure HTML, CSS and Python!)  
+* All functions in one single script (that you can actually understand)  
+* Navigation bar generated for you (customizable if you prefer)  
 
 If all you want is to simply put HTML content on the web (such as a personal
 webpage), then this might be the right tool for you.
@@ -43,8 +40,7 @@ Please note that this project is under development. Features are being added and
 
 ## Example
 
-To get you started there is a full basic website example (with a `Makefile`
-included):
+To get you started there is a full basic website example (with a `Makefile` included):
 
     example/
        |__ Makefile
@@ -59,7 +55,7 @@ included):
        |__ third/ 
               |__ index.md 
 
-To generate the HTML pages (after you've downloaded the folder `example`): 
+To generate the HTML pages download the folder `example`, and run: 
 
     cd example
     python makesite.py
@@ -72,28 +68,24 @@ or using the `Makefile`:
 Now all you have to do is replace the content of the Markdown files (`.md`)
 with your own. For each Markdown file an HTML page will be created and added
 to the navigation bar. Then you just upload the content of the `example` folder
-(the `.html`, `.css`, `.jpg`, etc.) to any webserver.
+(the `.html`, `.css`, `.jpg`, etc.) to a web server/provider.
 
 In the above example each webpage (Markdown file) is placed into a sub-folder 
 to keep things organized (with the exception of the website's landing page, the
 'Home' page), but you can have all the pages in the same folder if you prefer
-(just give them different names).
+(just give them different names other than `index.md`).
 
 To customize your website you can play around with the `style.css` and/or
-`template.html` (see how below).
+`template.html` (see how in the links below).
 
 A `Makefile` is also provided for convenience. For example, on a Mac/Linux
-machine you can generate the website, display it in your browser, and upload
-it to [GitHub](https://pages.github.com/) as:
+machine you can generate the website, display it on your browser, and upload
+it to [GitHub](https://pages.github.com/) by doing:
 
     cd example  
     make site
     make show  
     make git  
-
-## In use
-
-Check out my own website made with `Makesite.py`: [fspaolo.net](http://fspaolo.net)
 
 ## How to 
 
